@@ -26,7 +26,7 @@ export const NavbarHeader: React.FC<NavbarHeaderProps> = ({ isOpen }) => {
         <img src="/images/verified.png" alt="verified" className="absolute -right-6 lg:-left-6 lg:top-1 " />
         <h1 className="text-sm lg:text-lg font-serif font-bold ">Muhammad Nur Maulana</h1>
         <p className="font-serif hidden lg:block">@maulana</p>
-        <button className={`w-20 p-1 bg-[url(/images/retro.jpg)] bg-cover rounded-2xl lg:mt-4 bg-bottom  ${change ? "bg-[url(/images/retro.jpg)]" : "bg-[url(/images/car.jpg)]"}`} onClick={changeToggleTheme}>
+        <button className={`w-20 p-1 bg-cover rounded-2xl lg:mt-4 bg-bottom  ${change ? "bg-[url(/images/retro.jpg)]" : "bg-[url(/images/car.jpg)]"}`} onClick={changeToggleTheme}>
           <div className={`w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-white bg-cover bg-center ${change ? "animate-toRight" : "animate-toLeft"}`}>
             <div className={`w-3 h-3 rounded-full bg-white bg-cover bg-center ${change ? "animate-toRight" : "animate-toLeft"}`} />
           </div>
