@@ -1,7 +1,12 @@
+import { ContainerPages } from "../components/ContainerPages";
+
 export const Home = () => {
   return (
-    <div className="dark:bg-slate-900 absolute top-0 left-0 dark:text-white w-[100%] h-[2000px]">
-      <h1>Home</h1>
-    </div>
+    <ContainerPages>
+      <div className="flex gap-2 items-center">
+        <h1 className="text-2xl font-mono font-bold">Hi, I'm Maulana</h1>
+        <img src="/images/hand.png" alt="hand" />
+      </div>
+    </ContainerPages>
   );
 };

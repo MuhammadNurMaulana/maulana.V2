@@ -1,3 +1,5 @@
+import { ContainerPages } from "../components/ContainerPages";
+
 export const Article = () => {
-  return <div>Article</div>;
+  return <ContainerPages>Article</ContainerPages>;
 };
