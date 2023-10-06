@@ -3,6 +3,7 @@ import { ContainerPages } from "../components/ContainerPages";
 import { HomeHeader } from "../components/HomeComponents/HomeHeader";
 import { FaDiscord, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { HomeSocial } from "../components/HomeComponents/HomeSocial";
+import { HomeSkills } from "../components/HomeComponents/HomeSkills";
 
 export const Home = () => {
   const socialLinks = [
@@ -48,6 +49,8 @@ export const Home = () => {
 
       <h1 className="my-4 font-mono text-lg font-sem">Let's Connect</h1>
       <HomeSocial items={socialLinks} />
+
+      <HomeSkills />
     </ContainerPages>
   );
 };

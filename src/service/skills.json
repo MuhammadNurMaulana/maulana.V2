@@ -1,0 +1,34 @@
+[
+  {
+    "src": "/images/icons8-html5-100.png",
+    "name": "HTML5"
+  },
+  {
+    "src": "/images/icons8-css-100.png",
+    "name": "CSS"
+  },
+  {
+    "src": "/images/icons8-javascript-100.png",
+    "name": "Javascript"
+  },
+  {
+    "src": "/images/icons8-tailwindcss-100.png",
+    "name": "Tailwind CSS"
+  },
+  {
+    "src": "/images/icons8-bootstrap-100.png",
+    "name": "Bootstrap"
+  },
+  {
+    "src": "/images/icons8-vite-100.png",
+    "name": "Vite"
+  },
+  {
+    "src": "/images/icons8-react-100.png",
+    "name": "React"
+  },
+  {
+    "src": "/images/icons8-typescript-100.png",
+    "name": "Typescript"
+  }
+]

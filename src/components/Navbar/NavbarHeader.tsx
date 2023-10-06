@@ -2,8 +2,6 @@ import { ButtonHTMLAttributes, useState } from "react";
 
 interface NavbarHeaderProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isOpen: string;
-
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const NavbarHeader: React.FC<NavbarHeaderProps> = ({ isOpen }) => {

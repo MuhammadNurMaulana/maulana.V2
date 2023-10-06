@@ -1,13 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { Items } from "../../types/items";
 
 interface Menu {
   showMenu: boolean;
   isOpen: boolean;
-  items: {
-    name: string;
-    link: string;
-    icon: JSX.Element;
-  }[];
+  items: Items;
 }
 export const NavbarMenu: React.FC<Menu> = ({ items, isOpen, showMenu }) => {
   return (
