@@ -1,7 +1,7 @@
-import { ButtonHTMLAttributes, useState } from "react";
+import { useState } from "react";
 
-interface NavbarHeaderProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  isOpen: string;
+interface NavbarHeaderProps {
+  isOpen: boolean;
 }
 
 export const NavbarHeader: React.FC<NavbarHeaderProps> = ({ isOpen }) => {
@@ -11,7 +11,7 @@ export const NavbarHeader: React.FC<NavbarHeaderProps> = ({ isOpen }) => {
     document.documentElement.classList.toggle("dark");
   };
   return (
-    <div className={`flex items-center lg:flex-col gap-4 lg:py-2 ${isOpen}`}>
+    <div className={`flex items-center lg:flex-col gap-4 lg:py-2 ${isOpen ? "flex" : "lg:hidden"}`}>
       <div className="hidden lg:block absolute top-0 left-0 w-full h-[18%] bg-[url(/images/city.jpg)] bg-cover bg-center -z-10 rounded-t-lg" />
       <div className="hidden lg:flex gap-2 items-center py-1 px-3 bg-white rounded-xl font-semibold text-sm">
         <div className="w-2 h-2 bg-green-800 rounded-full animate-ping" />

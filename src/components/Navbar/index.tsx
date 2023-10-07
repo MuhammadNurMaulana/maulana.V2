@@ -52,7 +52,7 @@ export const Navbar = () => {
       <NavbarButtonShow isOpen={isOpen} onClick={showNavbar} />
 
       <div className="lg:px-8 py-4 items-center justify-between w-full pr-4  lg:max-w-max lg:justify-start lg:items-start lg:flex-col flex flex-row gap-8 rounded-xl relative">
-        <NavbarHeader isOpen={`${isOpen ? "flex" : "lg:hidden"}`} />
+        <NavbarHeader isOpen={isOpen} />
 
         <NavbarMenu items={navMenu} isOpen={isOpen} showMenu={showMenu} />
 
