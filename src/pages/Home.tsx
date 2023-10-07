@@ -47,7 +47,7 @@ export const Home = () => {
     <ContainerPages>
       <HomeHeader />
 
-      <h1 className="my-4 font-mono text-lg font-sem">Let's Connect</h1>
+      <h1 className="mt-10 mb-4 font-mono text-lg font-sem">Let's Connect</h1>
       <HomeSocial items={socialLinks} />
 
       <HomeSkills />
