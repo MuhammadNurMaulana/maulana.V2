@@ -11,6 +11,7 @@ import { NavbarButtonMenu } from "./NavbarButtonMenu";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [change, setChange] = useState<boolean>(false);
 
   const showNavbar = () => {
     setIsOpen(!isOpen);
@@ -18,6 +19,11 @@ export const Navbar = () => {
 
   const showMenuNav = () => {
     setShowMenu(!showMenu);
+  };
+
+  const changeToggleTheme = () => {
+    setChange(!change);
+    document.documentElement.classList.toggle("dark");
   };
 
   const navMenu = [
@@ -52,7 +58,7 @@ export const Navbar = () => {
       <NavbarButtonShow isOpen={isOpen} onClick={showNavbar} />
 
       <div className="lg:px-8 py-4 items-center justify-between w-full pr-4  lg:max-w-max lg:justify-start lg:items-start lg:flex-col flex flex-row gap-8 rounded-xl relative">
-        <NavbarHeader isOpen={isOpen} />
+        <NavbarHeader isOpen={isOpen} change={change} onClick={changeToggleTheme} />
 
         <NavbarMenu items={navMenu} isOpen={isOpen} showMenu={showMenu} />
 

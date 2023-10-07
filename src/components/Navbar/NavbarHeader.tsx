@@ -1,15 +1,9 @@
-import { useState } from "react";
-
-interface NavbarHeaderProps {
+interface NavbarHeaderProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isOpen: boolean;
+  change: boolean;
 }
 
-export const NavbarHeader: React.FC<NavbarHeaderProps> = ({ isOpen }) => {
-  const [change, setChange] = useState<boolean>(false);
-  const changeToggleTheme = () => {
-    setChange(!change);
-    document.documentElement.classList.toggle("dark");
-  };
+export const NavbarHeader: React.FC<NavbarHeaderProps> = ({ isOpen, change, ...rest }) => {
   return (
     <div className={`flex items-center lg:flex-col gap-4 lg:py-2 ${isOpen ? "flex" : "lg:hidden"}`}>
       <div className="hidden lg:block absolute top-0 left-0 w-full h-[18%] bg-[url(/images/city.jpg)] bg-cover bg-center -z-10 rounded-t-lg" />
@@ -24,7 +18,7 @@ export const NavbarHeader: React.FC<NavbarHeaderProps> = ({ isOpen }) => {
         <img src="/images/verified.png" alt="verified" className="absolute -right-6 lg:-left-6 lg:top-1 " />
         <h1 className="text-sm lg:text-lg font-serif font-bold ">Muhammad Nur Maulana</h1>
         <p className="font-serif hidden lg:block">@maulana</p>
-        <button className={`w-20 p-1 bg-cover rounded-2xl lg:mt-4 bg-bottom  ${change ? "bg-[url(/images/retro.jpg)]" : "bg-[url(/images/car.jpg)]"}`} onClick={changeToggleTheme}>
+        <button className={`w-20 p-1 bg-cover rounded-2xl lg:mt-4 bg-bottom  ${change ? "bg-[url(/images/retro.jpg)]" : "bg-[url(/images/car.jpg)]"}`} {...rest}>
           <div className={`w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-white bg-cover bg-center ${change ? "animate-toRight" : "animate-toLeft"}`}>
             <div className={`w-3 h-3 rounded-full bg-white bg-cover bg-center ${change ? "animate-toRight" : "animate-toLeft"}`} />
           </div>
