@@ -20,6 +20,10 @@
     "name": "Bootstrap"
   },
   {
+    "src": "/images/icons8-chakra-ui-100.png",
+    "name": "Chakra UI"
+  },
+  {
     "src": "/images/icons8-vite-100.png",
     "name": "Vite"
   },
