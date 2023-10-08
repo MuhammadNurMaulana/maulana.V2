@@ -1,0 +1,102 @@
+[
+  {
+    "src": "/images/project4.png",
+    "name": "Maulana.V2",
+    "desc": "A personal website built with some powerful technologies",
+    "tech": [
+      {
+        "src": "/images/icons8-vite-100.png",
+        "name": "Vite"
+      },
+      {
+        "src": "/images/icons8-tailwindcss-100.png",
+        "name": "Tailwind CSS"
+      },
+      {
+        "src": "/images/icons8-typescript-100.png",
+        "name": "Typescript"
+      },
+      {
+        "src": "/images/icons8-react-100.png",
+        "name": "React"
+      },
+      {
+        "src": "/images/vercel.png",
+        "name": "Vercel"
+      }
+    ]
+  },
+  {
+    "src": "/images/project3.png",
+    "name": "RireNfts Marketplace",
+    "desc": "Official website of RireNFTs, a company operating in the NFT Marketplace",
+    "tech": [
+      {
+        "src": "/images/icons8-vite-100.png",
+        "name": "Vite"
+      },
+      {
+        "src": "/images/icons8-tailwindcss-100.png",
+        "name": "Tailwind CSS"
+      },
+      {
+        "src": "/images/icons8-javascript-100.png",
+        "name": "Javascript"
+      },
+      {
+        "src": "/images/icons8-react-100.png",
+        "name": "React"
+      },
+      {
+        "src": "/images/vercel.png",
+        "name": "Vercel"
+      }
+    ]
+  },
+  {
+    "src": "/images/project2.png",
+    "name": "Maulana Personal Website",
+    "desc": "Personal website built with some powerful technologies",
+    "tech": [
+      {
+        "src": "/images/icons8-vite-100.png",
+        "name": "Vite"
+      },
+      {
+        "src": "/images/icons8-tailwindcss-100.png",
+        "name": "Tailwind CSS"
+      },
+      {
+        "src": "/images/icons8-javascript-100.png",
+        "name": "Javascript"
+      },
+      {
+        "src": "/images/icons8-react-100.png",
+        "name": "React"
+      },
+      {
+        "src": "/images/vercel.png",
+        "name": "Vercel"
+      }
+    ]
+  },
+  {
+    "src": "/images/project1.png",
+    "name": "GameSuit Javanese",
+    "desc": "A game website built with html,css,javascript",
+    "tech": [
+      {
+        "src": "/images/icons8-html5-100.png",
+        "name": "HTML"
+      },
+      {
+        "src": "/images/icons8-css-100.png",
+        "name": "CSS"
+      },
+      {
+        "src": "/images/icons8-javascript-100.png",
+        "name": "Javascript"
+      }
+    ]
+  }
+]
