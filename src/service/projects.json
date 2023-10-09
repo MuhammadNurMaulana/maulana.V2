@@ -3,6 +3,7 @@
     "src": "/images/project4.png",
     "name": "Maulana.V2",
     "desc": "A personal website built with some powerful technologies",
+    "link": "/projects/maulana-v2",
     "tech": [
       {
         "src": "/images/icons8-vite-100.png",
@@ -30,6 +31,7 @@
     "src": "/images/project3.png",
     "name": "RireNfts Marketplace",
     "desc": "Official website of RireNFTs, a company operating in the NFT Marketplace",
+    "link": "/projects/rire-nfts-marketplace",
     "tech": [
       {
         "src": "/images/icons8-vite-100.png",
@@ -57,6 +59,7 @@
     "src": "/images/project2.png",
     "name": "Maulana Personal Website",
     "desc": "Personal website built with some powerful technologies",
+    "link": "/projects/personal-website",
     "tech": [
       {
         "src": "/images/icons8-vite-100.png",
@@ -84,6 +87,7 @@
     "src": "/images/project1.png",
     "name": "GameSuit Javanese",
     "desc": "A game website built with html,css,javascript",
+    "link": "/projects/gamesuit",
     "tech": [
       {
         "src": "/images/icons8-html5-100.png",
