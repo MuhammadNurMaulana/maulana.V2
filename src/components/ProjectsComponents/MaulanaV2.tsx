@@ -35,7 +35,7 @@ export const MaulanaV2Pages = () => {
           <p className="font-semibold text-lg">A personal website built with some powerful technologies</p>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row md:items-center justify-between my-2">
           <div className="flex gap-2 items-center my-3">
             <h1 className="font-semibold text-lg">Tech Stack :</h1>
             {tech.map((item) => (
@@ -44,16 +44,20 @@ export const MaulanaV2Pages = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link to={"https://github.com/MuhammadNurMaulana/maulana.V2"} className="flex items-center gap-2" target="_blank">
+            <Link to={"https://github.com/MuhammadNurMaulana/maulana.V2"} className="flex items-center gap-2 text-lg" target="_blank">
               <FaGithub />
-              <h1>Source Code</h1>
+              <h1 className="font-bold">Source Code</h1>
             </Link>
             <h1> | </h1>
-            <Link to={"https://maulana-v2.vercel.app"} className="flex items-center gap-2" target="_blank">
+            <Link to={"https://maulana-v2.vercel.app"} className="flex items-center gap-2 text-lg" target="_blank">
               <FaReact />
-              <h1>Live Demo</h1>
+              <h1 className="font-bold">Live Demo</h1>
             </Link>
           </div>
+        </div>
+
+        <div className="overflow-hidden w-full group">
+          <img src="/images/project4.png" alt="Personal Website" className="group-hover:scale-110 transition-all duration-1000" />
         </div>
       </div>
     </ContainerPages>
