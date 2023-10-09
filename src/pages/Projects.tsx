@@ -13,7 +13,7 @@ export const Projects = () => {
         <h1 className="text-2xl font-mono font-bold">Projects</h1>
         <p className="font-semibold">some projects I'm currently working on that are open source</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 mt-12 md:pb-40 lg:pb-12">
         {projects.map((project, index) => (
           <div key={index} className="rounded-xl overflow-hidden group">
             <Link to={project.link} className="relative">
