@@ -27,14 +27,14 @@ export const ProjectHeader: React.FC<HeaderProps> = ({ title, desc, source_code,
         </div>
 
         <div className="flex items-center gap-4">
-          <Link to={source_code} className="flex items-center gap-2 text-lg" target="_blank">
+          <Link to={source_code} className="flex items-center gap-2 text-lg group" target="_blank">
             <FaGithub />
-            <h1 className="font-bold">Source Code</h1>
+            <h1 className="font-bold text-green-500 group-hover:text-green-700">Source Code</h1>
           </Link>
           <h1> | </h1>
-          <Link to={live_demo} className="flex items-center gap-2 text-lg" target="_blank">
+          <Link to={live_demo} className="flex items-center gap-2 text-lg group" target="_blank">
             <FaReact />
-            <h1 className="font-bold">Live Demo</h1>
+            <h1 className="font-bold text-green-500 group-hover:text-green-700">Live Demo</h1>
           </Link>
         </div>
       </div>
