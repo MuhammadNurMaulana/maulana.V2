@@ -3,6 +3,7 @@ import { ContainerPages } from "../components/ContainerPages";
 import { Link } from "react-router-dom";
 import resume2 from "../resume/resume2.pdf";
 import { FiDownload } from "react-icons/fi";
+import { HeaderPages } from "../components/HeaderPages";
 
 export const About = () => {
   useEffect(() => {
@@ -10,10 +11,8 @@ export const About = () => {
   }, []);
   return (
     <ContainerPages>
-      <div className="border-b-2 border-dashed border-slate-400 pb-8">
-        <h1 className="text-2xl font-mono font-bold">About</h1>
-        <p className="font-semibold">A short story about introducing myself</p>
-      </div>
+      <HeaderPages title="About">A short story about introducing myself</HeaderPages>
+
       <p className="my-8 text-lg">
         Hi, I'm Muhammad Nur Maulana. I am a frontend developer and I am proficient in programming languages such as Java, JavaScript, and TypeScript. In web development, I have experience in HTML, CSS, JavaScript, Tailwind, Bootstrap,
         Chakra, React and TypeScript.

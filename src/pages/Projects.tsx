@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ContainerPages } from "../components/ContainerPages";
 import projects from "../service/projects.json";
 import { useEffect } from "react";
+import { HeaderPages } from "../components/HeaderPages";
 
 export const Projects = () => {
   useEffect(() => {
@@ -9,10 +10,8 @@ export const Projects = () => {
   }, []);
   return (
     <ContainerPages>
-      <div className="border-b-2 border-dashed border-slate-400 pb-8">
-        <h1 className="text-2xl font-mono font-bold">Projects</h1>
-        <p className="font-semibold">some projects I'm currently working on that are open source</p>
-      </div>
+      <HeaderPages title="Projects">some projects I'm currently working on that are open source</HeaderPages>
+
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 mt-12 md:pb-40 lg:pb-12">
         {projects.map((project, index) => (
           <div key={index} className="rounded-xl overflow-hidden group">
