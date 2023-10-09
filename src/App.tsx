@@ -16,14 +16,14 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="blogs" element={<Blog />} />
-        <Route path="articles" element={<Article />} />
-        <Route path="about" element={<About />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="projects/maulana-v2" element={<MaulanaV2Pages />} />
-        <Route path="projects/rire-nfts-marketplace" element={<RrieMarket />} />
-        <Route path="projects/personal-website" element={<PersonalWebsite />} />
-        <Route path="projects/gamesuit" element={<GameSuit />} />
+        <Route path="/blogs" element={<Blog />} />
+        <Route path="/articles" element={<Article />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/maulana-v2" element={<MaulanaV2Pages />} />
+        <Route path="/projects/rire-nfts-marketplace" element={<RrieMarket />} />
+        <Route path="/projects/personal-website" element={<PersonalWebsite />} />
+        <Route path="/projects/gamesuit" element={<GameSuit />} />
       </Routes>
     </>
   );
