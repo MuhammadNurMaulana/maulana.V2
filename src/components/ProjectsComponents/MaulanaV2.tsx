@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { ContainerPages } from "../ContainerPages";
 import { ProjectHeader } from "./ProjectHeader";
 
 export const MaulanaV2Pages = () => {
+  useEffect(() => {
+    document.title = "Project | Maulana V2";
+  }, []);
   const tech = [
     {
       src: "/images/icons8-vite-100.png",

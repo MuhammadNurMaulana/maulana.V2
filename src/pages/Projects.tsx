@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import { ContainerPages } from "../components/ContainerPages";
 import projects from "../service/projects.json";
+import { useEffect } from "react";
 
 export const Projects = () => {
+  useEffect(() => {
+    document.title = "Maulana Personal | Projects";
+  }, []);
   return (
     <ContainerPages>
       <div className="border-b-2 border-dashed border-slate-400 pb-8">

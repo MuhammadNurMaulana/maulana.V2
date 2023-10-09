@@ -4,8 +4,12 @@ import { HomeHeader } from "../components/HomeComponents/HomeHeader";
 import { FaDiscord, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { HomeSocial } from "../components/HomeComponents/HomeSocial";
 import { HomeSkills } from "../components/HomeComponents/HomeSkills";
+import { useEffect } from "react";
 
 export const Home = () => {
+  useEffect(() => {
+    document.title = "Maulana Personal | Home";
+  }, []);
   const socialLinks = [
     {
       name: "Github",
