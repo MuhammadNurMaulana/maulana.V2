@@ -8,7 +8,7 @@ export const HomeSkills: React.FC = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 grid-rows-1 gap-8">
         {skills.map((skill, index) => (
           <div key={index} className="grid justify-center text-center bg-slate-200 dark:bg-slate-800 rounded-xl py-2">
-            <img src={skill.src} alt={skill.name} />
+            <img src={skill.src} alt={skill.name} className="w-full" />
             <h1 className="font-mono font-semibold mt-2">{skill.name}</h1>
           </div>
         ))}
