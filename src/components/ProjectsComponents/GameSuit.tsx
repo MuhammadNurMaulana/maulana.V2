@@ -28,11 +28,8 @@ export const GameSuit = () => {
         source_code="https://github.com/MuhammadNurMaulana/MuhammadNurMaulana.github.io"
         live_demo="https://muhammadnurmaulana.github.io"
         img="/images/project1.png"
-      >
-        {tech.map((item) => (
-          <img src={item.src} alt={item.name} className="w-[25px] h-[25px]" />
-        ))}
-      </ProjectHeader>
+        tech={tech}
+      />
       <div>
         <h1 className="text-2xl font-mono font-bold mt-8 mb-4">Introduction</h1>
         <p className="text-lg font-semibold">

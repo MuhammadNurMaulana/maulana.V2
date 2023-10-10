@@ -30,11 +30,14 @@ export const MaulanaV2Pages = () => {
   ];
   return (
     <ContainerPages>
-      <ProjectHeader title="Maulana V2" desc="A personal website built with some powerful technologies" source_code="https://github.com/MuhammadNurMaulana/maulana.V2" live_demo="https://maulana-v2.vercel.app" img="/images/project4.png">
-        {tech.map((item) => (
-          <img src={item.src} alt={item.name} className="w-[25px] h-[25px]" />
-        ))}
-      </ProjectHeader>
+      <ProjectHeader
+        title="Maulana V2"
+        desc="A personal website built with some powerful technologies"
+        source_code="https://github.com/MuhammadNurMaulana/maulana.V2"
+        live_demo="https://maulana-v2.vercel.app"
+        img="/images/project4.png"
+        tech={tech}
+      />
 
       <div>
         <h1 className="text-2xl font-mono font-bold mt-8 mb-4">Introduction</h1>

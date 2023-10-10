@@ -36,11 +36,8 @@ export const RrieMarket = () => {
         source_code="https://github.com/MuhammadNurMaulana/Website_NFTs"
         live_demo="https://rire-nft.vercel.app"
         img="/images/project3.png"
-      >
-        {tech.map((item) => (
-          <img src={item.src} alt={item.name} className="w-[25px] h-[25px]" />
-        ))}
-      </ProjectHeader>
+        tech={tech}
+      />
 
       <div>
         <h1 className="text-2xl font-mono font-bold mt-8 mb-4">Introduction</h1>

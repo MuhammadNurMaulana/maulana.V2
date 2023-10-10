@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowBack } from "./ArrowBack";
 import { FaGithub, FaReact } from "react-icons/fa";
+import { Tech } from "../../types/items";
 
 interface HeaderProps {
   title: string;
@@ -8,10 +9,10 @@ interface HeaderProps {
   source_code: string;
   live_demo: string;
   img: string;
-  children: React.ReactNode;
+  tech: Tech;
 }
 
-export const ProjectHeader: React.FC<HeaderProps> = ({ title, desc, source_code, live_demo, img, children }) => {
+export const ProjectHeader: React.FC<HeaderProps> = ({ title, desc, source_code, live_demo, img, tech }) => {
   return (
     <div>
       <div className="border-b-2 border-slate-600 border-dashed pb-8">
@@ -23,7 +24,9 @@ export const ProjectHeader: React.FC<HeaderProps> = ({ title, desc, source_code,
       <div className="flex flex-col md:flex-row md:items-center justify-between my-2">
         <div className="flex gap-2 items-center my-3">
           <h1 className="font-semibold text-lg">Tech Stack :</h1>
-          {children}
+          {tech.map((item) => (
+            <img src={item.src} alt={item.name} className="w-[25px] h-[25px]" />
+          ))}
         </div>
 
         <div className="flex items-center gap-4">
