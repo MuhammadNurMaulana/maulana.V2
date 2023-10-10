@@ -16,7 +16,7 @@ export const ProjectHeader: React.FC<HeaderProps> = ({ title, desc, source_code,
   return (
     <div>
       <div className="border-b-2 border-slate-600 border-dashed pb-8">
-        <ArrowBack />
+        <ArrowBack to="/project" />
         <h1 className="text-2xl font-mono font-semibold mt-8 mb-2">{title}</h1>
         <p className="font-semibold text-lg">{desc}</p>
       </div>

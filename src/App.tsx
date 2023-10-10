@@ -9,6 +9,7 @@ import { MaulanaV2Pages } from "./components/ProjectsComponents/MaulanaV2";
 import { RrieMarket } from "./components/ProjectsComponents/RrieMarket";
 import { PersonalWebsite } from "./components/ProjectsComponents/PersonalWebsite";
 import { GameSuit } from "./components/ProjectsComponents/GameSuit";
+import { Blog1 } from "./components/BlogComponents/Blog1";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blog />} />
+        <Route path="/blogs/artificial-intelligence" element={<Blog1 />} />
         <Route path="/articles" element={<Article />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
